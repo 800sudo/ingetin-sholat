@@ -64,4 +64,3 @@ class IngetinSholatLogo extends StatelessWidget {
     return content;
   }
 }
-

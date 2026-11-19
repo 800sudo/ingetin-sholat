@@ -161,13 +161,16 @@ class PrayerTimeTile extends StatelessWidget {
                             ),
                           ),
                           const Gap(8),
-                          Text(
-                            prayer.type.arabicName,
-                            style: TextStyle(
-                              fontFamily: 'serif',
-                              fontSize: 14,
-                              fontWeight: FontWeight.w600,
-                              color: isDark ? Colors.white38 : Colors.black38,
+                          Flexible(
+                            child: Text(
+                              prayer.type.arabicName,
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                fontFamily: 'serif',
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                                color: isDark ? Colors.white38 : Colors.black38,
+                              ),
                             ),
                           ),
                           if (isNext) ...[
@@ -237,20 +240,24 @@ class PrayerTimeTile extends StatelessWidget {
                                       : Colors.grey,
                                 ),
                                 const Gap(5),
-                                Text(
-                                  prayer.isReminderActive
-                                      ? (prayer.offsetMinutes > 0
-                                            ? 'Pengingat: -${prayer.offsetMinutes}m ($reminderTimeStr)'
-                                            : 'Pengingat tepat waktu ($timeStr)')
-                                      : 'Pengingat nonaktif',
-                                  style: TextStyle(
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.w600,
-                                    color: prayer.isReminderActive
-                                        ? (isDark
-                                              ? const Color(0xFFFDE68A)
-                                              : const Color(0xFFB45309))
-                                        : Colors.grey.shade600,
+                                Flexible(
+                                  child: Text(
+                                    prayer.isReminderActive
+                                        ? (prayer.offsetMinutes > 0
+                                              ? 'Pengingat: -${prayer.offsetMinutes}m ($reminderTimeStr)'
+                                              : 'Pengingat tepat waktu ($timeStr)')
+                                        : 'Pengingat nonaktif',
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.w600,
+                                      color: prayer.isReminderActive
+                                          ? (isDark
+                                                ? const Color(0xFFFDE68A)
+                                                : const Color(0xFFB45309))
+                                          : Colors.grey.shade600,
+                                    ),
                                   ),
                                 ),
                                 const Gap(4),

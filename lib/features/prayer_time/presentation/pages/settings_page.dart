@@ -45,8 +45,7 @@ class SettingsPage extends StatelessWidget {
                   _buildSectionHeader(
                     context,
                     title: 'Mode Bunyi & Getar',
-                    subtitle:
-                        'Atur preferensi audio dan getaran saat pengingat aktif',
+                    subtitle: 'Atur preferensi audio dan getaran saat pengingat aktif',
                     icon: Icons.notifications_active_outlined,
                   ),
                   const Gap(14),
@@ -246,9 +245,15 @@ class SettingsPage extends StatelessWidget {
                           const Gap(8),
                           _buildParameterRow('Sudut Syafaq Isya', '18.0°'),
                           const Gap(8),
-                          _buildParameterRow('Waktu Imsak', '10 menit sebelum Subuh'),
+                          _buildParameterRow(
+                            'Waktu Imsak',
+                            '10 menit sebelum Subuh',
+                          ),
                           const Gap(8),
-                          _buildParameterRow('Faktor Kehati-hatian (Ihtiyat)', '+2 Menit'),
+                          _buildParameterRow(
+                            'Faktor Kehati-hatian (Ihtiyat)',
+                            '+2 Menit',
+                          ),
                         ],
                       ),
                     ),
@@ -303,7 +308,68 @@ class SettingsPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 12.5,
                               height: 1.45,
-                              color: isDark ? Colors.white70 : Colors.grey.shade700,
+                              color: isDark
+                                  ? Colors.white70
+                                  : Colors.grey.shade700,
+                            ),
+                          ),
+                          const Gap(16),
+                          const Divider(height: 1),
+                          const Gap(14),
+                          Container(
+                            padding: const EdgeInsets.all(14),
+                            decoration: BoxDecoration(
+                              color: isDark
+                                  ? const Color(0xFF102821)
+                                  : const Color(0xFFF0FDF4),
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(
+                                color: const Color(0xFF10B981)
+                                    .withValues(alpha: 0.3),
+                              ),
+                            ),
+                            child: Row(
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.all(10),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF25D366)
+                                        .withValues(alpha: 0.15),
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: const Icon(
+                                    Icons.support_agent_rounded,
+                                    color: Color(0xFF10B981),
+                                    size: 22,
+                                  ),
+                                ),
+                                const Gap(12),
+                                const Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'Layanan Bantuan & Dukungan:',
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 13,
+                                        ),
+                                      ),
+                                      Gap(2),
+                                      Text(
+                                        '089660626800',
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w800,
+                                          fontSize: 15,
+                                          color: Color(0xFF10B981),
+                                          letterSpacing: 0.5,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ],

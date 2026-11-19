@@ -180,55 +180,58 @@ class NextPrayerHeroCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 10,
-                              vertical: 3.5,
-                            ),
-                            decoration: BoxDecoration(
-                              color: const Color(0xFF10B981)
-                                  .withValues(alpha: 0.2),
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 10,
+                                vertical: 3.5,
+                              ),
+                              decoration: BoxDecoration(
                                 color: const Color(0xFF10B981)
-                                    .withValues(alpha: 0.4),
+                                    .withValues(alpha: 0.2),
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                  color: const Color(0xFF10B981)
+                                      .withValues(alpha: 0.4),
+                                ),
+                              ),
+                              child: const Text(
+                                'WAKTU SHOLAT BERIKUTNYA',
+                                style: TextStyle(
+                                  color: Color(0xFF6EE7B7),
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w800,
+                                  letterSpacing: 1.2,
+                                ),
                               ),
                             ),
-                            child: const Text(
-                              'WAKTU SHOLAT BERIKUTNYA',
-                              style: TextStyle(
-                                color: Color(0xFF6EE7B7),
-                                fontSize: 10,
+                            const Gap(6),
+                            Text(
+                              nextName,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 34,
                                 fontWeight: FontWeight.w800,
-                                letterSpacing: 1.2,
+                                letterSpacing: -0.5,
+                                height: 1.1,
                               ),
                             ),
-                          ),
-                          const Gap(6),
-                          Text(
-                            nextName,
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 34,
-                              fontWeight: FontWeight.w800,
-                              letterSpacing: -0.5,
-                              height: 1.1,
+                            const Gap(4),
+                            Text(
+                              'Waktu Adzan: $nextTimeStr WIB',
+                              style: TextStyle(
+                                color: Colors.white.withValues(alpha: 0.85),
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
-                          ),
-                          const Gap(4),
-                          Text(
-                            'Waktu Adzan: $nextTimeStr WIB',
-                            style: TextStyle(
-                              color: Colors.white.withValues(alpha: 0.85),
-                              fontSize: 14,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
+                      const Gap(12),
                       // Elegant Arabic Text
                       Text(
                         nextArabic,

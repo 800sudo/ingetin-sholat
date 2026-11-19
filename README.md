@@ -169,6 +169,13 @@ dart analyze
 
 ---
 
+## 📞 Layanan Bantuan & Dukungan
+
+Jika Anda membutuhkan bantuan, memiliki pertanyaan, atau ingin menyampaikan masukan:
+- **WhatsApp / Telepon**: `089660626800`
+
+---
+
 ## 📄 Lisensi
 
 Didistribusikan di bawah lisensi **MIT License**. Lihat file `LICENSE` untuk rincian lebih lanjut.

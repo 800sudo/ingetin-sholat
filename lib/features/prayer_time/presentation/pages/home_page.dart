@@ -229,12 +229,16 @@ class PrayerHomePageView extends StatelessWidget {
           children: [
             IngetinSholatLogo(size: 32),
             Gap(10),
-            Text(
-              AppConstants.appName,
-              style: TextStyle(
-                fontWeight: FontWeight.w800,
-                fontSize: 18,
-                letterSpacing: 0.2,
+            Flexible(
+              child: Text(
+                AppConstants.appName,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 18,
+                  letterSpacing: 0.2,
+                ),
               ),
             ),
           ],
@@ -473,14 +477,17 @@ class PrayerHomePageView extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const Text(
-                              'Jadwal Sholat Hari Ini',
-                              style: TextStyle(
-                                fontSize: 17,
-                                fontWeight: FontWeight.w800,
-                                letterSpacing: 0.2,
+                            const Expanded(
+                              child: Text(
+                                'Jadwal Sholat Hari Ini',
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w800,
+                                  letterSpacing: 0.2,
+                                ),
                               ),
                             ),
+                            const Gap(8),
                             Text(
                               IslamicDateHelper.getIndonesianFullDate(
                                 schedule.date,
