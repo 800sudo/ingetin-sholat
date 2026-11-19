@@ -49,7 +49,7 @@ void main() {
 
   const testSettings = ReminderSettings(
     defaultOffsetMinutes: 5,
-    selectedCityId: 'jakarta',
+    selectedCityId: 'indramayu',
     soundEnabled: true,
     vibrationEnabled: true,
   );
@@ -84,7 +84,7 @@ void main() {
         const PrayerLoadingState(),
         isA<PrayerLoadedState>()
             .having((s) => s.settings.defaultOffsetMinutes, 'defaultOffset', 5)
-            .having((s) => s.settings.selectedCityId, 'city', 'jakarta'),
+            .having((s) => s.settings.selectedCityId, 'city', 'indramayu'),
       ],
     );
 
