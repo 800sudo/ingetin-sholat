@@ -57,7 +57,7 @@ Bilah navigasi bawah dirancang sederhana dan ergonomis:
 3. **Pengaturan**: Menu pengaturan terfokus dan bersih (tanpa opsi yang redundan).
 
 ### 5. 🔔 Kontrol Notifikasi, Bunyi Adzan & Getar
-- Pilihan nada suara adzan & pengingat: *Adzan Suara Merdu, Adzan Makkah Al-Mukarramah, Adzan Madinah Al-Munawwarah, Nada Lembut Islami, dan Beep Alarm*.
+- Pilihan nada suara & pengingat: *Nada Standar Sistem (Ringtone), Beep Alarm Pengingat, dan Nada Notifikasi Lembut*.
 - Tombol uji coba langsung (**"Tes Pengingat"**) untuk mendengarkan bunyi dan merasakan getaran haptic.
 
 ---

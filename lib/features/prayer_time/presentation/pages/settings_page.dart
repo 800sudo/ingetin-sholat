@@ -443,11 +443,9 @@ class SettingsPage extends StatelessWidget {
 
   void _showTonePicker(BuildContext context, String currentTone) {
     const tones = [
-      'Adzan Suara Merdu',
-      'Adzan Makkah Al-Mukarramah',
-      'Adzan Madinah Al-Munawwarah',
-      'Nada Lembut Islami',
+      'Nada Standar Sistem (Ringtone)',
       'Beep Alarm Pengingat',
+      'Nada Notifikasi Lembut',
     ];
 
     showModalBottomSheet(

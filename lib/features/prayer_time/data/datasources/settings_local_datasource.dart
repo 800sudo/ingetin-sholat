@@ -26,7 +26,7 @@ class SettingsLocalDataSourceImpl implements SettingsLocalDataSource {
           sharedPreferences.getBool(AppConstants.keyVibrationEnabled) ?? true;
       final tone =
           sharedPreferences.getString(AppConstants.keyNotificationTone) ??
-          'Adzan Suara Merdu';
+          'Nada Standar Sistem (Ringtone)';
       final cityId =
           sharedPreferences.getString(AppConstants.keySelectedCity) ??
           'indramayu';

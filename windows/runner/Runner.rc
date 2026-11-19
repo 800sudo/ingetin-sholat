@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.master.starter" "\0"
-            VALUE "FileDescription", "flutter_master_starter" "\0"
+            VALUE "CompanyName", "com.ingetinsholat" "\0"
+            VALUE "FileDescription", "Ingetin Sholat - Pengingat Waktu Adzan" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "flutter_master_starter" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 com.master.starter. All rights reserved." "\0"
-            VALUE "OriginalFilename", "flutter_master_starter.exe" "\0"
-            VALUE "ProductName", "flutter_master_starter" "\0"
+            VALUE "InternalName", "ingetin_sholat" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 Ingetin Sholat. All rights reserved." "\0"
+            VALUE "OriginalFilename", "ingetin_sholat.exe" "\0"
+            VALUE "ProductName", "Ingetin Sholat" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

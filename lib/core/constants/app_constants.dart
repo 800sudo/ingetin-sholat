@@ -18,7 +18,7 @@ class AppConstants {
   static const int defaultOffsetMinutes = 5; // -5 menit sebelum adzan
   static const bool defaultSoundEnabled = true;
   static const bool defaultVibrationEnabled = true;
-  static const String defaultNotificationTone = 'Adzan Suara Merdu';
+  static const String defaultNotificationTone = 'Nada Standar Sistem (Ringtone)';
 }
 
 enum PrayerType { imsak, subuh, syuruq, dzuhur, ashar, maghrib, isya }

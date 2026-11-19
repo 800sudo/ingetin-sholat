@@ -26,7 +26,7 @@ class ReminderSettings extends Equatable {
     },
     this.soundEnabled = true,
     this.vibrationEnabled = true,
-    this.notificationTone = 'Adzan Suara Merdu',
+    this.notificationTone = 'Nada Standar Sistem (Ringtone)',
     this.selectedCityId = 'indramayu',
     this.isDarkMode = false,
   });
